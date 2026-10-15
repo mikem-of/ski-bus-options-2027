@@ -1,0 +1,1815 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e8f2f5">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="canonical" href="https://mikem-of.github.io/ski-bus-options-2027/">
+  <title>Wintersport per bus · februari 2027</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f6fafb;
+      --ice: #e8f2f5;
+      --ice-dark: #d5e6eb;
+      --ink: #102a3a;
+      --ink-soft: #35515f;
+      --line: #a9c1cb;
+      --blue: #174f68;
+      --blue-dark: #0b3449;
+      --orange: #f05a35;
+      --orange-dark: #c74326;
+      --green: #176d57;
+      --yellow: #f2cf53;
+      --white: #fff;
+      --mono: "Consolas", "Courier New", monospace;
+      --display: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+      --body: "Segoe UI", "Aptos", system-ui, sans-serif;
+      --page-width: 1240px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--ice);
+      color: var(--ink);
+      font: 16px/1.5 var(--body);
+      font-family: "Segoe UI", "Aptos", system-ui, sans-serif;
+    }
+
+    a { color: inherit; }
+
+    button, input, select { font: inherit; }
+
+    button, select, input[type="search"], input[type="checkbox"] { accent-color: var(--orange); }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 3px;
+    }
+
+    .topbar {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: min(calc(100% - 40px), var(--page-width));
+      min-height: 58px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font: 800 16px/1 var(--display);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .wordmark-mark {
+      display: inline-grid;
+      width: 28px;
+      height: 24px;
+      place-items: center;
+      background: var(--orange);
+      color: var(--white);
+      font: 700 12px/1 var(--mono);
+      clip-path: polygon(0 0, 100% 0, 100% 73%, 82% 100%, 0 100%);
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+
+    .checked-date {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font: 600 11px/1 var(--mono);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 3px #d3ebe0;
+    }
+
+    .top-link {
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    main {
+      width: min(calc(100% - 40px), var(--page-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: clamp(30px, 5vw, 66px) 0 24px;
+    }
+
+    .hero h1 {
+      max-width: 1200px;
+      margin: 0;
+      font: 850 clamp(3.3rem, 7vw, 5.8rem)/.92 var(--display);
+      letter-spacing: -.055em;
+      text-wrap: balance;
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin: 20px 0 28px;
+      color: var(--ink-soft);
+      font-size: clamp(16px, 1.8vw, 20px);
+      line-height: 1.4;
+    }
+
+    .journey {
+      display: grid;
+      grid-template-columns: minmax(140px, 1fr) minmax(90px, 1.4fr) minmax(140px, 1fr) minmax(90px, 1.4fr) minmax(140px, 1fr);
+      align-items: center;
+      padding: 16px 0 17px;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .stop {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      align-items: center;
+      gap: 9px;
+      min-width: 0;
+    }
+
+    .stop-date {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      place-content: center;
+      background: var(--ink);
+      color: var(--paper);
+      text-align: center;
+      font: 700 10px/1.05 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .stop-date strong { display: block; font-size: 14px; }
+
+    .stop-copy strong {
+      display: block;
+      font: 750 14px/1.15 var(--display);
+      text-transform: uppercase;
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .stop-copy small {
+      display: block;
+      margin-top: 3px;
+      color: var(--ink-soft);
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .route-track {
+      position: relative;
+      height: 2px;
+      margin: 0 15px;
+      background: repeating-linear-gradient(90deg, var(--blue) 0 8px, transparent 8px 14px);
+    }
+
+    .route-track::before, .route-track::after {
+      position: absolute;
+      top: 50%;
+      width: 9px;
+      height: 9px;
+      border: 2px solid var(--blue);
+      border-radius: 50%;
+      background: var(--ice);
+      content: "";
+      transform: translateY(-50%);
+    }
+
+    .route-track::before { left: 0; }
+    .route-track::after { right: 0; }
+
+    .route-bus {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      display: grid;
+      width: 26px;
+      height: 20px;
+      place-items: center;
+      border: 1px solid var(--orange-dark);
+      background: var(--orange);
+      color: var(--white);
+      font: 700 10px/1 var(--mono);
+      transform: translate(-50%, -50%);
+      animation: bus-run 1.1s cubic-bezier(.16, 1, .3, 1) .15s both;
+    }
+
+    .manifest {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin: 22px 0 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .manifest div {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      align-items: baseline;
+      gap: 10px;
+      min-height: 46px;
+      padding: 12px 14px 11px 0;
+      border-right: 1px dashed var(--line);
+    }
+
+    .manifest div:not(:first-child) { padding-left: 14px; }
+    .manifest div:last-child { border-right: 0; }
+
+    .manifest dt {
+      color: var(--ink-soft);
+      font: 700 10px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .manifest dd {
+      margin: 0;
+      font: 700 13px/1.25 var(--display);
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .brief-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 14px 0 0;
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+
+    .brief-note::before {
+      width: 18px;
+      height: 2px;
+      margin-top: 8px;
+      flex: 0 0 auto;
+      background: var(--orange);
+      content: "";
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 45px 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font: 800 clamp(1.8rem, 4vw, 3rem)/.96 var(--display);
+      letter-spacing: -.035em;
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .section-heading p {
+      max-width: 430px;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    .featured-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 18px 0 7px;
+      color: var(--blue);
+      font: 700 10px/1.2 var(--mono);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .featured-label span:last-child { color: var(--ink-soft); }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(190px, 1.35fr) minmax(160px, 1fr) minmax(165px, 1fr) auto;
+      align-items: end;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .field {
+      display: grid;
+      gap: 5px;
+      min-width: 0;
+    }
+
+    .field label, .control-label {
+      color: var(--ink-soft);
+      font: 700 10px/1.2 var(--mono);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .field input, .field select {
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .field input::placeholder { color: #526e7c; opacity: 1; }
+
+    .budget-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 0 10px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .budget-toggle input { width: 16px; height: 16px; }
+
+    .results-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 15px 0 10px;
+      color: var(--ink-soft);
+      font: 600 11px/1.3 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .results-meta strong {
+      color: var(--ink);
+      font-size: 13px;
+    }
+
+    .offer-list {
+      display: grid;
+      gap: 14px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .offer {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) minmax(290px, .78fr);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      transition: border-color .18s ease, background-color .18s ease;
+    }
+
+    .offer:hover { border-color: var(--blue); }
+
+    .offer.is-lead {
+      border: 2px solid var(--blue-dark);
+      background: var(--white);
+    }
+
+    .offer.is-lead::before {
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 6px;
+      height: calc(100% + 2px);
+      background: var(--orange);
+      content: "";
+    }
+
+    .offer-main { min-width: 0; padding: 17px 18px 15px 22px; }
+
+    .offer-heading {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr) auto;
+      align-items: start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .rank {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      font: 700 14px/1 var(--mono);
+    }
+
+    .offer.is-lead .rank {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .operator {
+      margin: 0 0 3px;
+      color: var(--blue);
+      font: 700 10px/1.2 var(--mono);
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+
+    .offer-heading h3 {
+      margin: 0;
+      font: 800 clamp(1.35rem, 2.6vw, 2rem)/1 var(--display);
+      letter-spacing: -.025em;
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .property-note {
+      margin: 4px 0 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .quick-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 18px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--blue);
+      font: 700 10px/1.3 var(--mono);
+    }
+
+    .destination {
+      margin: 4px 0 0;
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+
+    .pass-stamp {
+      display: inline-block;
+      padding: 5px 7px 4px;
+      border: 1px solid var(--orange);
+      color: var(--orange-dark);
+      font: 700 10px/1 var(--mono);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 5px;
+      margin: 0 0 12px;
+    }
+
+    .photo {
+      position: relative;
+      min-width: 0;
+      margin: 0;
+      overflow: hidden;
+      aspect-ratio: 1.9 / 1;
+      background: var(--ice-dark);
+    }
+
+    .photo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: var(--ice-dark);
+    }
+
+    .photo figcaption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 24px;
+      padding: 4px 7px;
+      background: var(--ink);
+      color: var(--white);
+      font: 700 9px/1.2 var(--mono);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .photo figcaption a {
+      color: #d6edf4;
+      font-weight: 500;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .photo.is-missing img { opacity: 0; }
+
+    .photo.is-missing::after {
+      position: absolute;
+      inset: 0 0 24px;
+      display: grid;
+      place-items: center;
+      color: var(--ink-soft);
+      content: "Beeld niet geladen";
+      font: 600 11px/1.2 var(--mono);
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fact {
+      min-width: 0;
+      padding: 9px 10px 9px 0;
+      border-right: 1px dashed var(--line);
+    }
+
+    .fact:not(:first-child) { padding-left: 10px; }
+    .fact:last-child { border-right: 0; }
+
+    .fact dt {
+      margin: 0 0 4px;
+      color: var(--ink-soft);
+      font: 700 9px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .fact dd {
+      margin: 0;
+      font: 750 12px/1.25 var(--display);
+    }
+
+    .detail-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 11px;
+    }
+
+    .room-note {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+    }
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--green);
+      font: 700 10px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .availability::before {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      content: "";
+    }
+
+    .offer-price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      min-width: 0;
+      padding: 18px 17px 15px;
+      border-left: 1px dashed var(--line);
+      background: #edf5f7;
+    }
+
+    .price-state {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 4px 7px;
+      background: var(--ice-dark);
+      color: var(--ink);
+      font: 700 9px/1.1 var(--mono);
+      letter-spacing: .02em;
+      text-transform: uppercase;
+    }
+
+    .price-state.is-exact {
+      background: #d6ece2;
+      color: #12583f;
+    }
+
+    .price-state.is-estimate {
+      background: #fff0d4;
+      color: #6a4a00;
+    }
+
+    .price-label {
+      margin: 18px 0 2px;
+      color: var(--ink-soft);
+      font: 700 10px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .total-price {
+      margin: 0;
+      font: 850 clamp(2rem, 3.5vw, 3.2rem)/.95 var(--display);
+      letter-spacing: -.05em;
+      font-variant-numeric: tabular-nums;
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .per-family {
+      margin: 6px 0 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+    }
+
+    .budget-line {
+      width: 100%;
+      margin: 17px 0 10px;
+    }
+
+    .budget-line-unverified {
+      padding-top: 8px;
+      border-top: 1px dashed var(--line);
+    }
+
+    .budget-line-unverified .budget-caption { margin-bottom: 0; }
+
+    .budget-caption {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 5px;
+      color: var(--ink-soft);
+      font: 600 9px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .budget-track {
+      height: 5px;
+      background: #c8dce2;
+    }
+
+    .budget-fill {
+      height: 100%;
+      background: var(--blue);
+    }
+
+    .budget-fill.is-tight { background: var(--orange); }
+
+    .price-calc {
+      max-width: 260px;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 10px;
+      line-height: 1.45;
+    }
+
+    .offer-actions {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      gap: 10px;
+      margin-top: 15px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+
+    .offer-details {
+      grid-column: 1 / -1;
+      border-top: 1px solid var(--line);
+      background: #f0f6f8;
+    }
+
+    .offer-details > summary {
+      padding: 12px 18px;
+      cursor: pointer;
+      color: var(--ink);
+      font: 700 10px/1.3 var(--mono);
+      text-decoration: underline;
+      text-decoration-color: var(--orange);
+      text-underline-offset: 3px;
+      text-transform: uppercase;
+    }
+
+    .provider-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 9px 11px;
+      background: var(--ink);
+      color: var(--white);
+      font: 700 10px/1.1 var(--mono);
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .provider-link:hover { background: var(--orange-dark); }
+
+    .detail-content { padding: 0 18px 16px 22px; }
+
+    .detail-content p { max-width: 76ch; margin: 0 0 9px; font-size: 12px; }
+
+    .detail-content ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px 20px;
+      margin: 0;
+      padding: 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+      list-style: none;
+    }
+
+    .detail-content li::before {
+      margin-right: 6px;
+      color: var(--orange-dark);
+      content: "—";
+      font-family: var(--mono);
+    }
+
+    .sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin-top: 12px;
+      font: 600 10px/1.35 var(--mono);
+    }
+
+    .sources a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    .no-results {
+      padding: 34px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      font: 700 18px/1.3 var(--display);
+    }
+
+    .info-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+      gap: 30px;
+      margin: 46px 0 0;
+      padding: 22px 0;
+      border-top: 2px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .info-panel h2 {
+      max-width: 400px;
+      margin: 0;
+      font: 800 clamp(1.6rem, 3vw, 2.5rem)/.98 var(--display);
+      letter-spacing: -.03em;
+    }
+
+    .info-panel p {
+      max-width: 75ch;
+      margin: 0 0 11px;
+      color: var(--ink-soft);
+      font-size: 12px;
+    }
+
+    .info-panel p:last-child { margin-bottom: 0; }
+
+    .valmorel-route .route-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin: 16px 0 12px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .route-stats div {
+      padding: 10px 12px 10px 0;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .route-stats div:nth-last-child(-n + 2) { border-bottom: 0; }
+
+    .route-stats dt {
+      color: var(--ink-soft);
+      font: 700 9px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .route-stats dd {
+      margin: 4px 0 0;
+      color: var(--ink);
+      font: 750 14px/1.25 var(--display);
+      font-family: "Bahnschrift SemiCondensed", "Arial Narrow", "Aptos Display", system-ui, sans-serif;
+    }
+
+    .valmorel-route .route-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-top: 14px;
+    }
+
+    .route-links a {
+      color: var(--blue-dark);
+      font-size: 12px;
+      font-weight: 700;
+      text-underline-offset: 3px;
+    }
+
+    .valmorel-route .gallery { margin-bottom: 10px; }
+
+    .source-notes {
+      margin: 26px 0 50px;
+      border-top: 1px solid var(--line);
+    }
+
+    .source-notes summary {
+      padding: 12px 0;
+      cursor: pointer;
+      font: 700 11px/1.3 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .source-notes-content {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px 40px;
+      padding: 8px 0 16px;
+    }
+
+    .source-notes-content p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .source-notes-content a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      width: min(calc(100% - 40px), var(--page-width));
+      margin: 0 auto;
+      padding: 18px 0 22px;
+      gap: 20px;
+      color: var(--ink-soft);
+      font-size: 10px;
+    }
+
+    .footer-inner strong {
+      color: var(--ink);
+      font: 700 10px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .print-button {
+      min-height: 34px;
+      padding: 7px 10px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      font: 700 10px/1.2 var(--mono);
+      text-transform: uppercase;
+    }
+
+    .print-button:hover { background: var(--ink); color: var(--white); }
+
+    @keyframes bus-run {
+      from { left: 0; }
+      to { left: 92%; }
+    }
+
+    @keyframes bus-run-mobile {
+      from { top: 0; }
+      to { top: 100%; }
+    }
+
+    @media (max-width: 900px) {
+      .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .offer { grid-template-columns: minmax(0, 1.35fr) minmax(245px, .8fr); }
+      .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .fact:nth-child(2) { border-right: 0; }
+      .fact:nth-child(3) { padding-left: 0; border-top: 1px dashed var(--line); }
+      .fact:nth-child(4) { border-top: 1px dashed var(--line); }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner, main, .footer-inner { width: min(calc(100% - 28px), var(--page-width)); }
+      .topbar-right { gap: 0; }
+      .top-link { display: none; }
+      .hero { padding-top: 14px; }
+      .checked-date { gap: 5px; font-size: 9px; letter-spacing: 0; white-space: nowrap; }
+      .hero h1 { font-size: clamp(2.5rem, 11vw, 4rem); }
+      .hero-copy { margin: 7px 0 9px; font-size: 13px; }
+      .journey {
+        grid-template-columns: minmax(62px, 1fr) 36px minmax(76px, 1.1fr) 36px minmax(60px, .8fr);
+        align-items: center;
+        gap: 2px;
+        padding: 8px 0;
+      }
+      .stop { grid-template-columns: 27px minmax(0, 1fr); gap: 4px; }
+      .stop-date { width: 27px; height: 29px; font-size: 8px; }
+      .stop-date strong { font-size: 11px; }
+      .stop-copy strong { font-size: 9px; }
+      .stop-copy small { margin-top: 2px; font-size: 8px; line-height: 1.1; }
+      .route-track {
+        width: auto;
+        height: 2px;
+        margin: 0;
+        background: repeating-linear-gradient(90deg, var(--blue) 0 6px, transparent 6px 11px);
+      }
+      .route-track::before, .route-track::after { top: 50%; transform: translate(-50%, -50%); }
+      .route-track::before { left: 0; }
+      .route-track::after { right: 0; left: auto; transform: translate(50%, -50%); }
+      .route-bus {
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 16px;
+        transform: translate(-50%, -50%);
+        animation: none;
+      }
+      .manifest { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 12px; }
+      .manifest div, .manifest div:not(:first-child) {
+        display: block;
+        min-height: 0;
+        padding: 6px 5px;
+        border-top: 0;
+        border-right: 1px dashed var(--line);
+      }
+      .manifest div:first-child { padding-left: 0; }
+      .manifest div:last-child { padding-right: 0; border-right: 0; }
+      .manifest dt { display: none; }
+      .manifest dd { font-size: 9px; line-height: 1.2; }
+      .brief-note { display: none; }
+      .section-heading { align-items: start; flex-direction: column; gap: 4px; margin-top: 10px; }
+      .section-heading p { display: none; text-align: left; }
+      .controls { grid-template-columns: 1fr 1fr; gap: 9px; }
+      .field:first-child { grid-column: 1 / -1; }
+      .budget-toggle { white-space: normal; }
+      .offer { grid-template-columns: 1fr; }
+      .offer-main { display: contents; }
+      .offer-heading {
+        grid-row: 1;
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 9px;
+        padding: 12px 12px 0 15px;
+      }
+      .rank { width: 34px; height: 34px; font-size: 12px; }
+      .pass-stamp { grid-column: 2; justify-self: start; }
+      .property-note { font-size: 9px; }
+      .quick-facts {
+        display: grid;
+        grid-row: 2;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4px 8px;
+        padding: 5px 12px 7px 15px;
+        color: var(--blue);
+        font: 700 8px/1.2 var(--mono);
+      }
+      .gallery { grid-row: 4; gap: 3px; margin: 0 12px 8px; }
+      .photo { aspect-ratio: 1.18 / 1; }
+      .photo figcaption {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2px;
+        min-height: 34px;
+        padding: 4px 5px;
+        font-size: 8px;
+      }
+      .photo.is-missing::after { inset: 0 0 34px; }
+      .facts { display: none; }
+      .offer-price {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(108px, .85fr);
+        align-items: start;
+        gap: 6px 10px;
+        min-height: 0;
+        padding: 7px 12px 8px 15px;
+        border-top: 1px dashed var(--line);
+        border-left: 0;
+      }
+      .offer-price > .price-state { grid-column: 1 / -1; grid-row: 1; }
+      .offer-price > div:nth-of-type(1) { grid-column: 1; grid-row: 2; }
+      .price-label { margin-top: 0; }
+      .total-price { font-size: 1.95rem; }
+      .per-family { display: none; }
+      .offer-price > .budget-line { grid-column: 2; grid-row: 2; align-self: end; margin: 0 0 2px; }
+      .offer-price > .budget-line .budget-track { display: none; }
+      .offer-price > .budget-line .budget-caption { margin: 0; font-size: 8px; }
+      .offer-price > .price-calc { display: none; }
+      .offer-price > .offer-actions { grid-column: 1 / -1; grid-row: 3; align-items: flex-start; margin-top: 1px; padding-top: 6px; }
+      .detail-row { display: none; }
+      .offer-details { grid-row: 5; }
+      .detail-content { padding: 0 14px 14px 15px; }
+      .provider-link { min-height: 42px; }
+      .info-panel { grid-template-columns: 1fr; gap: 12px; margin-top: 34px; }
+      .source-notes-content { grid-template-columns: 1fr; gap: 12px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    @media print {
+      .topbar { position: static; }
+      .controls, .provider-link, .print-button { display: none !important; }
+      body { background: #fff; }
+      .offer, .offer-price { break-inside: avoid; }
+      .offer { margin-bottom: 10px; }
+      .offer-list { gap: 8px; }
+      details > *:not(summary) { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: A family ski holiday is a route-and-budget decision, not a glossy resort catalogue; one ledger compares bus, lift access, pass days and real images.
+  OWN-WORLD: Winter coach ledger: ice-blue stock, ink-navy type, signal-orange punches, ruled route lines and perforated price slips.
+  STORY: The family checks dates, budget and own gear, compares package totals and a clearly marked Saalbach lead, then opens provider sources.
+  FIRST VIEWPORT: The heading leads into a three-stop travel rail and family manifest; the first ranked offer starts directly below with three photos, 8-day price and lift facts.
+  FORM: Operate; grounded candidate 3 of 7, seed e0442d35; one lead ticket followed by a ranked, ruled list.
+  -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="wordmark" href="#top" aria-label="Naar boven">
+        <span class="wordmark-mark" aria-hidden="true">27</span>
+        <span>SkiBus / Reisblad</span>
+      </a>
+      <div class="topbar-right">
+        <span class="checked-date"><span class="live-dot" aria-hidden="true"></span> Bijgewerkt · 15 okt 2026</span>
+        <a class="top-link" href="#bronnen">Bronnen en prijsregels</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Met de bus naar de sneeuw.</h1>
+      <p class="hero-copy">Valmorel, Savoie en Saalbach-Hinterglemm-Leogang. Busopties voor 19–28 februari 2027; eigen ski's en schoenen mee.</p>
+
+      <div class="journey" aria-label="Reisroute van Nederland naar het skigebied en terug">
+        <div class="stop">
+          <span class="stop-date"><strong>19</strong>FEB</span>
+          <span class="stop-copy"><strong>Bus heen</strong><small>vrijdagavond · Nederland</small></span>
+        </div>
+        <div class="route-track" aria-hidden="true"><span class="route-bus">BUS</span></div>
+        <div class="stop">
+          <span class="stop-date"><strong>20</strong>FEB</span>
+          <span class="stop-copy"><strong>8 skidagen</strong><small>za 20–za 27 feb</small></span>
+        </div>
+        <div class="route-track" aria-hidden="true"></div>
+        <div class="stop">
+          <span class="stop-date"><strong>28</strong>FEB</span>
+          <span class="stop-copy"><strong>Thuis</strong><small>zondagochtend · 7 nachten weg</small></span>
+        </div>
+      </div>
+
+      <dl class="manifest" aria-label="Reisopdracht">
+        <div><dt>Gezin</dt><dd>2 volwassenen · 2 kinderen</dd></div>
+        <div><dt>Budget</dt><dd>Maximaal €5.000</dd></div>
+        <div><dt>Gebied</dt><dd>Richtwaarde: 200+ km</dd></div>
+        <div><dt>Materiaal</dt><dd>Eigen ski's + schoenen</dd></div>
+      </dl>
+      <p class="brief-note">Het Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn heeft 270 km piste. Valmorel kan per bus via Moûtiers + Altibus S62, maar een pakket is niet bevestigd; het Grand Domaine telt 165 km. Grotere Savoie-opties: Sybelles 310, Paradiski 425 en Les 3 Vallées 600 km.</p>
+    </section>
+
+    <section aria-labelledby="offers-title">
+      <div class="section-heading">
+        <h2 id="offers-title">Valmorel, Savoie en Saalbach. Gezinsprijs eerst.</h2>
+        <p>Bedragen zijn voor vier reizigers. De Saalbach-lead is een vanafsom; datum, kamer en volledige 8-daagse pasprijs zijn niet bevestigd.</p>
+      </div>
+      <div id="featured-offer" aria-live="polite"></div>
+
+      <form class="controls" id="filters" onsubmit="return false">
+        <div class="field">
+          <label for="search">Zoek verblijf of plaats</label>
+          <input id="search" type="search" placeholder="Bijv. Saalbach" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="area">Skigebied</label>
+          <select id="area">
+            <option value="all">Alle gebieden</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="sort">Rangschik op</label>
+          <select id="sort">
+            <option value="price">Laagste gezinsbedrag</option>
+            <option value="size">Meeste pistekilometers</option>
+            <option value="lift">Dichtst bij lift</option>
+          </select>
+        </div>
+        <label class="budget-toggle" for="within-budget">
+          <input id="within-budget" type="checkbox" checked>
+          <span>Toon basisbedragen tot €5.000</span>
+        </label>
+      </form>
+
+      <div class="results-meta">
+        <span><strong id="result-count">11</strong> kandidaten · 8 dagen gewenst · 4 personen</span>
+        <span>Prijsleads met open posten staan onderaan</span>
+      </div>
+      <ol class="offer-list" id="offer-list" aria-label="Wintersport busopties"></ol>
+      <p class="no-results" id="no-results" hidden>Geen optie past bij deze filters. Wis de zoekterm of kies een ander skigebied.</p>
+    </section>
+
+    <section class="info-panel valmorel-route" aria-labelledby="valmorel-route-title">
+      <div>
+        <h2 id="valmorel-route-title">Valmorel zelf: bus kan, pakket niet bevestigd.</h2>
+        <p>De Winterliner rijdt tot Moûtiers; daarna brengt Altibus-lijn S62 je in circa 45 minuten naar Valmorel. Winterliner publiceert tickets vanaf €99 p.p. en biedt voor groepen van vier of meer een offerte tot Valmorel aan. Het exacte retourtarief en de beschikbaarheid voor 19–28 februari 2027 zijn niet bevestigd.</p>
+        <dl class="route-stats">
+          <div><dt>Le Grand Domaine</dt><dd>165 km piste</dd></div>
+          <div><dt>8-daagse skipas gezin</dt><dd>€1.370</dd></div>
+          <div><dt>Bus</dt><dd>Winterliner → Moûtiers</dd></div>
+          <div><dt>Laatste traject</dt><dd>Altibus S62 · ca. 45 min</dd></div>
+        </dl>
+        <p>De skipasprijs is 2×€376,40 (volwassene) + 2×€308,60 (kind 5–12), exclusief eventuele korting en €12 retourwaarborg voor vier herlaadkaarten. Dit is alleen de pas, geen verblijf-plus-buspakket; Le Grand Domaine blijft onder de 200 km-richtwaarde.</p>
+        <div class="route-links">
+          <a href="https://www.winterliner.nl/bestemmingplaats/frankrijk/valmorel" target="_blank" rel="noreferrer">Winterliner-route en tickets</a>
+          <a href="https://www.altibus.com/en/arriving-by-train/moutiers" target="_blank" rel="noreferrer">Altibus S62 vanaf Moûtiers</a>
+          <a href="https://skipass.valmorel.com/fr/tarifs-forfaits-valmorel/" target="_blank" rel="noreferrer">Skipasprijzen Valmorel</a>
+        </div>
+      </div>
+      <div>
+        <div class="gallery" aria-label="Voorbeeldbeelden van verblijf, skigebied en bus naar Valmorel">
+          <figure class="photo">
+            <img src="https://www.mgm-hotels-residences.com/sites/default/files/styles/5_4/public/2023-08/mgm-residence-valmorel-anitea-carrousel-1.jpg?h=11e6f9f7&amp;itok=TLjUIWsR" alt="Buitenzijde van Résidence Anitéa in Valmorel" loading="lazy">
+            <figcaption><span>VERBLIJF · ANITÉA</span><a href="https://www.mgm-hotels-residences.com/fr/residence/anitea" target="_blank" rel="noreferrer">MGM-bron</a></figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="https://skipass.valmorel.com/media/image/valmorelb2c/cms/media/HIVER/LeGrandDomaine/Visuel-GD3.webp" alt="Pistes en bergen van Le Grand Domaine bij Valmorel" loading="lazy">
+            <figcaption><span>GEBIED · 165 KM</span><a href="https://skipass.valmorel.com/en/le-grand-domaine" target="_blank" rel="noreferrer">Gebiedsbron</a></figcaption>
+          </figure>
+          <figure class="photo">
+            <img src="https://www.winterliner.nl/cache/image/400x600_378a525afab61096_1791917926.JPG" alt="Winterliner Royal Class touringcar" loading="lazy">
+            <figcaption><span>BUS · ROYAL CLASS</span><a href="https://www.winterliner.nl/bestemmingplaats/frankrijk/valmorel" target="_blank" rel="noreferrer">Winterliner-bron</a></figcaption>
+          </figure>
+        </div>
+        <p>Voorbeeldverblijf Anitéa is piste-nabij; prijs en beschikbaarheid voor deze week zijn niet gecontroleerd. Deze route is apart samen te stellen, niet als één bevestigde pakketprijs.</p>
+      </div>
+    </section>
+
+    <section class="info-panel" aria-labelledby="gear-title">
+      <h2 id="gear-title">Eigen ski's mee? Dit mag de bus in.</h2>
+      <div>
+        <p><strong>Sunweb:</strong> volgens de <a href="https://service.sunweb.com/nl/support/solutions/articles/103000195944-hoeveel-bagage-mag-ik-meenemen-in-de-bus-" target="_blank" rel="noreferrer">bus-bagage-FAQ</a> mag 20 kg bagage mee, plus ski's en skischoenen. Controleer de actuele voorwaarden in de reisbescheiden.</p>
+        <p><strong>Winterliner:</strong> volgens de <a href="https://www.winterliner.nl/bagage" target="_blank" rel="noreferrer">bagageregels</a> gaan ski's in een beschermhoes en schoenen in een aparte tas gratis mee; daarnaast één koffer tot 20 kg en handbagage. Sportiek rijdt met Interbus; de exacte bagagelimiet voor deze rit is hier niet bevestigd.</p>
+        <p>Er is geen materiaalhuur opgenomen. Bij twijfel: vraag de vervoerder naar de maat en het aantal skihoezen voordat je boekt.</p>
+      </div>
+    </section>
+
+    <details class="source-notes" id="bronnen">
+      <summary>Bronnen, prijsstatus en kanttekeningen</summary>
+      <div class="source-notes-content">
+        <p><strong>Live-basis.</strong> Sunweb is op 14 oktober 2026 doorzocht op 19 februari 2027, vier reizigers en een 10-daagse busreis. De 8-daagse prijs is de live basisprijs plus de actuele zaterdag-tot-zaterdag upgrade, berekend zonder de boeking op te slaan. De Saalbach-bronnen zijn op 15 oktober 2026 gecontroleerd. <a href="https://www.sunweb.nl/wintersport/busreis" target="_blank" rel="noreferrer">Sunweb busreizen</a>.</p>
+        <p><strong>Indicatieve rijen.</strong> Die gebruiken de zichtbare “vanaf p.p.”-prijs maal vier en de live upgrade van hetzelfde skigebied. Kamertype, beschikbaarheid en lokale kosten kunnen de definitieve totaalprijs veranderen.</p>
+        <p><strong>Sportiek.</strong> De 8-daagse berekening gebruikt de actuele 6-daagse pakketprijs en 8-daagse pasupgrade. De busprijs vanaf Rotterdam (€187 p.p.) kwam uit het gepubliceerde tarief dat op 27 september 2026 is gecontroleerd; bevestig dit bedrag voor reservering. <a href="https://www.sportiek.com/wintersport-busreizen" target="_blank" rel="noreferrer">Busreizen en opstapplaatsen</a>.</p>
+        <p><strong>Valmorel zelf.</strong> De live Summit Travel-zoekpagina toonde twee accommodaties, maar de vervoersfilter gaf “Bus (0)”. Ik vond geen bevestigd verblijf-plus-buspakket in Valmorel. Het dichtstbijzijnde live pakket is in Saint-François-Longchamp, in hetzelfde Grand Domaine van 165 km. <a href="https://www.summittravel.nl/Wintersport/Ski/Frankrijk/Le-Grand-Domaine/Valmorel/Bar" target="_blank" rel="noreferrer">Summit Travel Valmorel-zoekresultaat</a>.</p>
+        <p><strong>Valmorel zelf samenstellen.</strong> Winterliner rijdt naar Moûtiers en noemt een vanafprijs van €99 p.p.; daarna rijdt Altibus S62 in circa 45 minuten naar Valmorel. Voor groepen vanaf vier personen kan Winterliner een offerte tot Valmorel maken. Het exacte retourtarief en de ritbeschikbaarheid voor 19–28 februari 2027 zijn niet bevestigd. De 8-daagse skipas kost volgens de 2026/27-prijstabel €1.370 voor dit gezin, vóór eventuele korting en herlaadkaarten. <a href="https://www.winterliner.nl/bestemmingplaats/frankrijk/valmorel" target="_blank" rel="noreferrer">Winterliner Valmorel</a> · <a href="https://www.altibus.com/en/arriving-by-train/moutiers" target="_blank" rel="noreferrer">Altibus Moûtiers</a> · <a href="https://skipass.valmorel.com/fr/tarifs-forfaits-valmorel/" target="_blank" rel="noreferrer">Grand Domaine skipasprijzen</a>.</p>
+        <p><strong>Saalbach-lead.</strong> Het Skicircus telt officieel 270 km piste. Summit Travel/JUFA toont verblijf vanaf €571 p.p. incl. skipas en een Summit-pendelbus vanaf €210 p.p.; €3.124 is alleen de optelsom van die vanafprijzen, niet een datum- of kamertype-offerte en geen bevestigd 8-daags gezinstotaal. De inbegrepen pasduur is onbekend; de volwassenupgrade naar 8 dagen is €85 p.p. vanaf een 6-daagse basis, de kinderupgrade is niet bevestigd. De officiële losse 8-daagse gezins-pasprijs is €1.575 + €8 KeyCard-deposito. <a href="https://www.saalbach.com/en/winter/ski-resort" target="_blank" rel="noreferrer">Skicircus</a> · <a href="https://www.saalbach.com/en/winter/skitickets/peak-season" target="_blank" rel="noreferrer">Skipasprijzen</a> · <a href="https://www.summittravel.nl/Wintersport/Ski/Oostenrijk/Saalbach-Hinterglemm/Saalbach/JUFA-Alpenhotel" target="_blank" rel="noreferrer">JUFA Alpenhotel</a> · <a href="https://www.summittravel.nl/Wintersport/Ski/Pendelbussen-Oostenrijk" target="_blank" rel="noreferrer">Summit pendelbus</a>.</p>
+        <p><strong>Saalbach bus-only.</strong> Interbus toont €122 enkele reis Amsterdam–Saalbach voor 19 februari en €122 terug op 27 februari. €976 voor vier stoelen is een rekensom tegen hetzelfde getoonde tarief; kindertarief, plekbeschikbaarheid en exacte aankomsttijd zijn niet bevestigd. Er is geen verblijf of skipas inbegrepen. <a href="https://www.interbus.nl/busreis/oostenrijk/saalbach?bestemming-pagination=8#selecteer-reis-formulier" target="_blank" rel="noreferrer">Interbus Saalbach</a>.</p>
+        <p><strong>Foto's.</strong> Accommodatie- en busbeelden worden rechtstreeks vanaf aanbieders geladen; pistebeelden vanaf de officiële gebieden. Sfeerbeelden garanderen niet de exacte kamer of touringcar voor februari 2027. Deze niet-geïndexeerde pagina is toegankelijk voor iedereen met de URL; beeldrechten voor verdere herpublicatie zijn niet bevestigd.</p>
+        <p><strong>Wat kan nog bijkomen?</strong> Bij sommige opties zijn bedlinnen, handdoeken, toeristenbelasting, eindschoonmaak of borg niet in de prijs inbegrepen. De details staan per aanbod. Borg is terugbetaalbaar maar vraagt tijdelijk extra betaalruimte.</p>
+        <p><strong>Belangrijk.</strong> Prijzen en beschikbaarheid veranderen. Dit overzicht is geen boeking en vervangt geen actuele eindcontrole bij de aanbieder. Valmorel zelf heeft 165 km piste; Saalbach heeft 270 km. De Saalbach-lead is niet bevestigd onder €5.000 omdat de volledige 8-daagse pasprijs, datumkamer en busbeschikbaarheid ontbreken. Crêt Voland en Altineige zitten krap binnen budget.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+    <div><strong>Reisblad 27</strong><br>Deelbare link · publiek toegankelijk · zoekmachines gevraagd niet te indexeren</div>
+      <button class="print-button" type="button" onclick="window.print()">Print vergelijking</button>
+    </div>
+  </footer>
+
+  <script>
+    const sunwebBusImage = "https://www.sunweb.nl/-/media/sundio/sunweb-be/skivakantie/homepagebannerbusreis.ashx?pointx=600&pointy=140&hash=E161C633BC73B6B7A85C7689FD0EA8FC&dw=960&dh=320";
+    const interbusImage = "https://www.interbus.nl/bestanden/sfeer/Naamloos-1(2).jpg?1413299336";
+
+    const areas = {
+      sybelles: {
+        name: "Les Sybelles",
+        km: 310,
+        url: "https://www.sybelles.ski/ski-sportif-aux-sybelles/",
+        image: "https://www.sybelles.ski/app/uploads/2025/09/image.webp",
+        alt: "Pistes et montagnes du domaine skiable Les Sybelles"
+      },
+      granddomaine: {
+        name: "Le Grand Domaine",
+        km: 165,
+        url: "https://skipass.valmorel.com/en/le-grand-domaine",
+        image: "https://skipass.valmorel.com/media/image/valmorelb2c/cms/media/HIVER/LeGrandDomaine/Visuel-GD3.webp",
+        alt: "Valmorel et les pistes du Grand Domaine"
+      },
+      saalbach: {
+        name: "Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn",
+        km: 270,
+        url: "https://www.saalbach.com/en/winter/ski-resort",
+        image: "https://www.saalbach.com/fotos-marketing/winter/TopSetWinter2425/image-thumb__8225331__content-head/saalbach-winter-skialpin-performer-2024-c-saalbach.com-georg-lindacher-43_KORR.jpg",
+        alt: "Skiër op de piste in het Skicircus Saalbach-Hinterglemm-Leogang-Fieberbrunn"
+      },
+      paradiski: {
+        name: "Paradiski",
+        km: 425,
+        url: "https://www.la-plagne.com/decouvrir-la-plagne/domaine-skiable",
+        image: "https://www.la-plagne.com/sites/default/files/styles/ogimage/public/medias/images/DESTI_domaine-piste-mira-grande-rochette_O-Allamand.jpg.webp?itok=biwIPVl4",
+        alt: "Piste panoramique à La Plagne, dans Paradiski"
+      },
+      troisvallees: {
+        name: "Les 3 Vallées",
+        km: 600,
+        url: "https://www.les3vallees.com/en/activities/alpine-skiing",
+        image: "https://www.les3vallees.com/media/cache/hero_default/hiver-ski-alpin-addict-solo-marmotte-courchevel-1920x1080-arthurbertrand-002.jpg",
+        alt: "Skieur sur une piste des 3 Vallées"
+      }
+    };
+
+    const offers = [
+      {
+        id: "sportiek-les-pistes",
+        provider: "Sportiek · Interbus",
+        name: "Les Pistes",
+        village: "Le Corbier · Frankrijk",
+        areaKey: "sybelles",
+        property: "2-kamerappartement · maximaal 4 personen",
+        lift: "Piste ca. 200 m · lift onder 300 m",
+        liftMeters: 200,
+        bus: "Rotterdam · vr 16:15",
+        pass: "Les Sybelles · 8 dagen · za–za",
+        total: 3167,
+        priceState: "Berekend",
+        priceKind: "calc",
+        priceLabel: "Gezinstotaal · vóór lokale kosten",
+        priceBasis: "Live basisprijs €2.187 voor verblijf + 6-daagse pas; 8-daagse upgrade €232; retourbus vanaf Rotterdam €748 volgens gepubliceerd tarief. De busprijs is op 27 september gecontroleerd.",
+        extras: "Toeristenbelasting, bedlinnen, handdoeken en borg komen erbij. Sportiek noemt de eindschoonmaak inbegrepen.",
+        availability: "Prijs voor 4 · kamerkeuze nogmaals controleren",
+        accommodationUrl: "https://www.sportiek.com/frankrijk/les-sybelles/le-corbier/les-pistes-extra-ingekocht",
+        busUrl: "https://www.interbus.nl/reisinfo/dream-class",
+        busImage: interbusImage,
+        busPhotoSource: "Interbus · voorbeeldbeeld",
+        accommodationImage: "https://www.sportiek.com/cache/image/1201x1600_e01c1e5c288b8cc7.webp",
+        accommodationAlt: "Appartementencomplex Les Pistes in Le Corbier",
+        included: ["Live verblijf + 6-daagse skipas", "8-daagse pasupgrade live gecontroleerd", "Retourbus vanaf Rotterdam berekend", "Eindschoonmaak en SGR"],
+        notIncluded: ["Toeristenbelasting", "Bedlinnen en handdoeken", "Borg ca. €300", "Bagagelimiet Interbus voor deze rit bevestigen"],
+        detailPrice: "6 dagen €2.187 + 4×€58 pasupgrade + 4×€187 retourbus = €3.167.",
+        sourceNote: "De accommodatieprijs komt uit Sportiek's actuele prijstabel voor za 20 februari, 4 personen en 7 nachten. Busfare is afzonderlijk berekend."
+      },
+      {
+        id: "sunweb-vostok",
+        provider: "Sunweb",
+        name: "Résidences Vostok",
+        village: "Le Corbier · Frankrijk",
+        areaKey: "sybelles",
+        property: "Studio type D · 2–4 personen · laatste kamer",
+        lift: "Piste 0 m · lift ca. 20 m",
+        liftMeters: 20,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les Sybelles · 8 dagen · za–za",
+        total: 3490.32,
+        priceState: "Live totaal + pasupgrade",
+        priceKind: "exact",
+        priceLabel: "Gezinstotaal · berekend",
+        priceBasis: "Live Sunweb-totaal €3.266,32 met 6-daagse pas en bus vanaf Amsterdam; vier actuele 8-daagse upgrades à €56 zijn erbij opgeteld.",
+        extras: "Het live totaal bevat bus, verblijf, SGR, Calamiteitenfonds en reserveringskosten. Linnen, handdoeken, lokale belasting en borg controleren.",
+        availability: "Laatste studio D op moment van check",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-sybelles/le-corbier/residences-vostok",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/39400000/33000/39433484-Original.jpg?width=1200&height=630&mode=crop&scale=both",
+        accommodationAlt: "Résidences Vostok in Le Corbier",
+        liftMeters: 20,
+        included: ["Bus vanaf Amsterdam", "7 nachten logies", "6-daagse pas + actuele upgrade naar 8 dagen", "SGR, Calamiteitenfonds en reserveringskosten"],
+        notIncluded: ["Bedlinnen en handdoeken", "Lokale belasting indien van toepassing", "Borg"],
+        detailPrice: "€3.266,32 live basis + 4×€56 voor de zaterdag-tot-zaterdag pas = €3.490,32.",
+        sourceNote: "Exact kamertype geselecteerd in de live prijsstap. De 8-daagse upgrade is bekeken maar niet opgeslagen."
+      },
+      {
+        id: "sunweb-zodiaque",
+        provider: "Sunweb",
+        name: "Résidence Zodiaque",
+        village: "Le Corbier · Frankrijk",
+        areaKey: "sybelles",
+        property: "Appartement · kamertype nog te selecteren",
+        lift: "Piste en centrum dichtbij · afstand niet exact",
+        liftMeters: null,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les Sybelles · 8 dagen · za–za",
+        total: 3620,
+        priceState: "Indicatie",
+        priceKind: "estimate",
+        priceLabel: "Vanafprijs gezin · 8 dagen geschat",
+        priceBasis: "Live zoekresultaat: €849 p.p. × 4; plus 4×€56 voor de 8-daagse Sybelles-pas. Het zoekresultaat noemt 4 reizigers, maar geen definitief kamertype.",
+        extras: "Definitieve kamertypeprijs, lokale kosten, borg en linnen zijn niet opnieuw in de boekingsstap gecontroleerd.",
+        availability: "Live vanafprijs · beschikbaarheid controleren",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-sybelles/le-corbier/residence-zodiaque",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/46100000/51000/46151286-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Résidence Zodiaque in Le Corbier",
+        included: ["Busreis en 6-daagse pas in vanafprijs", "Actuele 8-daagse pasupgrade meegenomen als indicatie"],
+        notIncluded: ["Exacte kamerprijs niet bevestigd", "Lokale kosten, linnen en borg controleren"],
+        detailPrice: "€849 × 4 + €224 pasupgrade = circa €3.620.",
+        sourceNote: "Live vanafprijs uit Sunwebs zoekresultaat voor 19 februari, 4 personen. Geen exact kamertype geselecteerd."
+      },
+      {
+        id: "sunweb-marmottes",
+        provider: "Sunweb",
+        name: "Les Chalets des Marmottes",
+        village: "Saint-Jean-d'Arves · Frankrijk",
+        areaKey: "sybelles",
+        property: "Appartement · kamertype nog te selecteren",
+        lift: "Skilift ca. 50 m",
+        liftMeters: 50,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les Sybelles · 8 dagen · za–za",
+        total: 3740,
+        priceState: "Indicatie",
+        priceKind: "estimate",
+        priceLabel: "Vanafprijs gezin · 8 dagen geschat",
+        priceBasis: "Live zoekresultaat: €879 p.p. × 4; plus 4×€56 voor de 8-daagse Sybelles-pas.",
+        extras: "Exacte kamertypeprijs en lokale kosten zijn niet opnieuw in de boekingsstap gecontroleerd.",
+        availability: "Live vanafprijs · beschikbaarheid controleren",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-sybelles/st-jean-darves/residence-les-chalets-des-marmottes-voordeeltarief",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/44600000/54000/44654967-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Les Chalets des Marmottes in Saint-Jean-d'Arves",
+        included: ["Busreis en 6-daagse pas in vanafprijs", "Actuele 8-daagse pasupgrade meegenomen als indicatie"],
+        notIncluded: ["Exacte kamerprijs niet bevestigd", "Lokale kosten, linnen en borg controleren"],
+        detailPrice: "€879 × 4 + €224 pasupgrade = circa €3.740.",
+        sourceNote: "Live vanafprijs uit Sunwebs zoekresultaat voor 19 februari, 4 personen. De accommodatiepagina noemt circa 50 m tot de lift."
+      },
+      {
+        id: "sunweb-labellemontagne",
+        provider: "Sunweb",
+        name: "Résidences Labellemontagne",
+        village: "Saint-François-Longchamp · Frankrijk",
+        areaKey: "granddomaine",
+        property: "Studio type C · 2–4 personen",
+        lift: "Dicht bij piste · exacte afstand niet bevestigd",
+        liftMeters: null,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Le Grand Domaine · 8 dagen · za–za",
+        total: 3023.4,
+        priceState: "Live totaal + pasupgrade",
+        priceKind: "exact",
+        priceLabel: "Gezinstotaal · lokale belasting inbegrepen",
+        priceBasis: "Live totaal €2.855,40 inclusief €19,80 toeristenbelasting + 4×€42 upgrade naar een 8-daagse pas.",
+        extras: "Live gekozen studio type C, 4 reizigers, bus vanaf Amsterdam en 7 nachten. Controleer eventuele borg, linnen en overige lokale kosten.",
+        availability: "Studio type C · 2–4 personen",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/le-grand-domaine/st-francois-longchamp/residences-labellemontagne-extra-ingekocht",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/17800000/9000/17809368-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Résidences Labellemontagne in Saint-François-Longchamp",
+        included: ["Bus vanaf Amsterdam", "7 nachten logies", "6-daagse pas + live 8-daagse upgrade", "€19,80 toeristenbelasting"],
+        notIncluded: ["Mogelijke borg", "Linnen en extra lokale kosten controleren"],
+        detailPrice: "€2.855,40 live basis + 4×€42 Le Grand Domaine-upgrade = €3.023,40.",
+        sourceNote: "Dit is Saint-François-Longchamp, onderdeel van hetzelfde Le Grand Domaine als Valmorel. Het hele domein heeft 165 km piste."
+      },
+      {
+        id: "sunweb-village-gaulois",
+        provider: "Sunweb",
+        name: "Résidence Le Village Gaulois",
+        village: "Saint-François-Longchamp · Frankrijk",
+        areaKey: "granddomaine",
+        property: "Appartement · kamertype nog te selecteren",
+        lift: "Direct aan piste · naast stoeltjeslift Marquis",
+        liftMeters: null,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Le Grand Domaine · 8 dagen · za–za",
+        total: 3920,
+        priceState: "Indicatie · live startprijs",
+        priceKind: "estimate",
+        priceLabel: "Vanafprijs gezin · 8 dagen geschat",
+        priceBasis: "Live vanafprijs €938 p.p. × 4 + 4×€42 Grand Domaine-upgrade.",
+        extras: "Exact kamertype, lokale kosten, linnen en borg zijn niet in de startprijs bevestigd.",
+        availability: "Live vanafprijs · beschikbaarheid controleren",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/le-grand-domaine/st-francois-longchamp/residence-le-village-gaulois-voordeeltarief",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/21400000/45000/21445952-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Résidence Le Village Gaulois in Saint-François-Longchamp",
+        included: ["Busreis en 6-daagse pas in vanafprijs", "Live 8-daagse Grand Domaine-upgrade meegenomen"],
+        notIncluded: ["Exacte kamertypeprijs niet bevestigd", "Lokale kosten, linnen en borg controleren"],
+        detailPrice: "€938 p.p. × 4 + 4×€42 upgrade = circa €3.920.",
+        sourceNote: "Live vanafprijs voor 19 februari en 4 reizigers. De aanbieding noemt directe piste-toegang en de Marquis-stoeltjeslift."
+      },
+      {
+        id: "sunweb-hauts-comborciere",
+        provider: "Sunweb",
+        name: "Résidence Les Hauts de Comborcière",
+        village: "La Toussuire · Frankrijk",
+        areaKey: "sybelles",
+        property: "Appartement · kamertype nog te selecteren",
+        lift: "Aan de voet van de piste · liftafstand niet bevestigd",
+        liftMeters: null,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les Sybelles · 8 dagen · za–za",
+        total: 4352,
+        priceState: "Indicatie · live startprijs",
+        priceKind: "estimate",
+        priceLabel: "Vanafprijs gezin · 8 dagen geschat",
+        priceBasis: "Live vanafprijs €1.032 p.p. × 4 + 4×€56 Les Sybelles-upgrade.",
+        extras: "Exact kamertype, lokale kosten, linnen en borg zijn niet in de startprijs bevestigd.",
+        availability: "Live vanafprijs · beschikbaarheid controleren",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-sybelles/la-toussuire/residence-les-hauts-de-comborciere",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/0/30000/30801-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Résidence Les Hauts de Comborcière in La Toussuire",
+        included: ["Busreis en 6-daagse pas in vanafprijs", "Live 8-daagse Sybelles-upgrade meegenomen"],
+        notIncluded: ["Exacte kamertypeprijs niet bevestigd", "Lokale kosten, linnen en borg controleren"],
+        detailPrice: "€1.032 p.p. × 4 + 4×€56 upgrade = circa €4.352.",
+        sourceNote: "Live vanafprijs voor 19 februari en 4 reizigers. De accommodatie ligt aan de voet van de piste in Les Sybelles."
+      },
+      {
+        id: "sunweb-cret-voland",
+        provider: "Sunweb",
+        name: "SOWELL RESIDENCES Crêt Voland",
+        village: "Les Menuires · Frankrijk",
+        areaKey: "troisvallees",
+        property: "Studio type C · 2–4 personen · laatste kamer",
+        lift: "Piste ca. 250 m · skilift ca. 250 m",
+        liftMeters: 250,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les 3 Vallées · 8 dagen · za–za",
+        total: 4842.52,
+        priceState: "Live totaal + pasupgrade · krap",
+        priceKind: "tight",
+        priceLabel: "Gezinstotaal · lokale belasting inbegrepen",
+        priceBasis: "Live totaal €4.149,48 inclusief €53,10 toeristenbelasting + 2×€189,62 volwassen-upgrades + 2×€156,90 kinderupgrades.",
+        extras: "De studio was de laatste kamer. Borg €300 is terugbetaalbaar; linnen is inbegrepen. Er blijft circa €157,48 over voor niet-vermelde extra's.",
+        availability: "Laatste studio type C · 2–4 personen",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-trois-vallees/les-menuires/les-menuires/sowell-residences-cret-voland-voordeeltarief",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/40200000/89000/40289524-Original.png?width=520&mode=crop&scale=both",
+        accommodationAlt: "SOWELL RESIDENCES Crêt Voland in Les Menuires",
+        included: ["Bus vanaf Amsterdam", "7 nachten logies", "6-daagse pas + live 8-daagse Les 3 Vallées-upgrade", "€53,10 toeristenbelasting en bedlinnen"],
+        notIncluded: ["Terugbetaalbare borg €300", "Andere lokale extra's kunnen de resterende budgetmarge overschrijden"],
+        detailPrice: "€4.149,48 live basis + €379,24 volwassen-upgrades + €313,80 kinderupgrades = €4.842,52.",
+        sourceNote: "Studio type C voor vier gekozen in de live prijsstap. Les Menuires geeft toegang tot het 600 km-domein Les 3 Vallées."
+      },
+      {
+        id: "sunweb-callisto",
+        provider: "Sunweb",
+        name: "Résidence Callisto",
+        village: "La Plagne · Frankrijk",
+        areaKey: "paradiski",
+        property: "Studio type A · 2–4 personen · laatste kamer",
+        lift: "Ski-in/ski-out · liftafstand niet bevestigd",
+        liftMeters: null,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Paradiski Illimité · 8 dagen · za–za",
+        total: 4362.08,
+        priceState: "Live totaal + pasupgrade",
+        priceKind: "exact",
+        priceLabel: "Gezinstotaal · lokale kosten inbegrepen",
+        priceBasis: "Live totaal €3.826,08 met 6-daagse La Plagne-pas en €36 toeristenbelasting + 4×€134 upgrade naar 8 dagen Paradiski.",
+        extras: "Het live bedrag bevat bus, accommodatie, boekingsbijdragen en lokale toeristenbelasting. Linnen, schoonmaak en borg controleren.",
+        availability: "Laatste studio type A op moment van check",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/paradiski/la-plagne/la-plagne/residence-callisto",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/33700000/34000/33734557-Original.jpg?width=1200&height=630&mode=crop&scale=both",
+        accommodationAlt: "Résidence Callisto in La Plagne",
+        included: ["Bus en 7 nachten logies", "8-daagse Paradiski-pasupgrade", "€36 lokale toeristenbelasting meegerekend"],
+        notIncluded: ["Linnen, eindschoonmaak en borg controleren"],
+        detailPrice: "€3.826,08 live basis + 4×€134 Paradiski-upgrade = €4.362,08.",
+        sourceNote: "Studio type A voor vier geselecteerd; de 8-daagse Paradiski-upgrade is bekeken maar niet opgeslagen."
+      },
+      {
+        id: "sunweb-altineige",
+        provider: "Sunweb",
+        name: "Résidence Altineige",
+        village: "Val Thorens · Frankrijk",
+        areaKey: "troisvallees",
+        property: "Studio type H · 1–4 personen · laatste kamer",
+        lift: "Piste 20 m · lift 20 m",
+        liftMeters: 20,
+        bus: "Amsterdam · vr 15:15",
+        pass: "Les 3 Vallées · 8 dagen · za–za",
+        total: 4908.38,
+        priceState: "Live totaal + pasupgrade · krap",
+        priceKind: "tight",
+        priceLabel: "Gezinstotaal · lokale belasting inbegrepen",
+        priceBasis: "Live totaal €4.237,58 inclusief €40 toeristenbelasting + 2×€183,33 upgrade voor volwassenen + 2×€152,07 voor kinderen naar 8 dagen Les 3 Vallées.",
+        extras: "De studio was de laatste kamer. Borg €500 is terugbetaalbaar en niet in het totaal opgenomen. Er blijft circa €91,62 over voor niet-vermelde extra's.",
+        availability: "Laatste studio type H op moment van check",
+        accommodationUrl: "https://www.sunweb.nl/wintersport/frankrijk/les-trois-vallees/val-thorens/val-thorens/residence-altineige",
+        busUrl: "https://www.sunweb.nl/wintersport/busreis",
+        busImage: sunwebBusImage,
+        busPhotoSource: "Sunweb · sfeerbeeld",
+        accommodationImage: "https://static.sunweb.nl/products/Images/Original/22300000/14000/22314364-Original.jpg?width=520&mode=crop&scale=both",
+        accommodationAlt: "Résidence Altineige in Val Thorens",
+        included: ["Bus, 7 nachten logies en 6-daagse Val Thorens-pas", "8-daagse 3 Vallées-upgrade live gecontroleerd", "€40 toeristenbelasting meegerekend"],
+        notIncluded: ["Terugbetaalbare borg €500", "Andere lokale extra's kunnen het budget overschrijden"],
+        detailPrice: "€4.237,58 live basis + €366,66 volwassen-upgrades + €304,14 kinderupgrades = €4.908,38.",
+        sourceNote: "Studio type H voor vier geselecteerd; de 8-daagse upgrade is bekeken maar niet opgeslagen."
+      },
+      {
+        id: "summit-jufa-saalbach",
+        provider: "Summit Travel · Royal Class",
+        name: "JUFA Alpenhotel Saalbach",
+        village: "Saalbach · Oostenrijk",
+        areaKey: "saalbach",
+        property: "Familiekamer ca. 40 m² · 3–4 personen · halfpension",
+        lift: "Lift en piste ca. 100 m",
+        liftMeters: 100,
+        bus: "Royal Class · vr heen / za terug",
+        pass: "Skicircus · 8 dagen gewenst · pasupgrade open",
+        total: 3124,
+        priceDisplay: "€3.124+",
+        priceState: "Indicatie · 8-daagse prijs onvolledig",
+        priceKind: "lead",
+        priceLabel: "Vanafsom gezin · geen eindprijs",
+        perFamilyLabel: "4 reizigers · 8-daagse pas niet bevestigd",
+        priceBasis: "Hotel vanaf €571 p.p. inclusief skipas + bus vanaf €210 p.p. = 4×€781 = €3.124. Dit is geen prijs voor de gevraagde datum of kamer. De inbegrepen pasduur is onbekend; Summit noemt voor volwassenen €85 p.p. van 6 naar 8 dagen, maar de kinderupgrade is niet bevestigd.",
+        extras: "Kamer- en busbeschikbaarheid op 19–28 februari, toeristenbelasting en mogelijke brandstoftoeslag moeten nog worden bevestigd. Behandel dit niet als een compleet bedrag onder €5.000.",
+        availability: "Familiekamer 3–4 personen genoemd; datum en beschikbaarheid niet bevestigd",
+        accommodationUrl: "https://www.summittravel.nl/Wintersport/Ski/Oostenrijk/Saalbach-Hinterglemm/Saalbach/JUFA-Alpenhotel",
+        busUrl: "https://www.summittravel.nl/Wintersport/Ski/Pendelbussen-Oostenrijk",
+        busImage: "https://www.winterliner.nl/cache/image/400x600_378a525afab61096_1791917926.JPG",
+        busPhotoPage: "https://www.winterliner.nl/bestemmingplaats/frankrijk/valmorel",
+        busPhotoSource: "Winterliner · voorbeeldbeeld",
+        busPhotoAlt: "Winterliner Royal Class-touringcar als sfeerbeeld; de Summit-bus is niet bevestigd",
+        accommodationImage: "https://www.summittravel.nl/webedit/TDE/Summit/Pictures/Oostenrijk/Saalbach/Alpenhotel_Saalbach.jpg?w=375&h=240",
+        accommodationAlt: "JUFA Alpenhotel Saalbach",
+        included: ["Vanafprijs verblijf met een skipas waarvan de duur niet is bevestigd", "Royal Class-busprijs vanaf €210 p.p."],
+        notIncluded: ["Bevestigde 8-daagse gezinsprijs", "Upgradeprijs voor kinderen", "Datum- en kamerbeschikbaarheid", "Lokale kosten en mogelijke brandstoftoeslag"],
+        detailPrice: "€571 × 4 verblijf vanaf + €210 × 4 bus vanaf = €3.124. Dit bedrag bevestigt geen 8-daagse pas of beschikbaarheid. De volwassenupgrade naar 8 dagen is €85 p.p. wanneer een 6-daagse pas is inbegrepen; de kinderupgrade moet worden opgevraagd.",
+        sourceNote: "De Skicircus-pistes tellen 270 km. Zie de bronverwijzingen hierboven; datum- en kamertypeprijs zijn niet bevestigd."
+      }
+    ];
+
+    const sunwebQuery = new URLSearchParams({
+      "DepartureDate[0]": "2027-02-19",
+      "Mealplan[0]": "LG",
+      "Duration[0]": "10",
+      "TransportType[0]": "Bus",
+      originList: "search-result"
+    }).toString();
+
+    function liveOfferUrl(offer) {
+      return offer.provider.startsWith("Sunweb")
+        ? `${offer.accommodationUrl}?${sunwebQuery}`
+        : offer.accommodationUrl;
+    }
+
+    const money = amount => new Intl.NumberFormat("nl-NL", {
+      style: "currency",
+      currency: "EUR",
+      minimumFractionDigits: Number.isInteger(amount) ? 0 : 2,
+      maximumFractionDigits: 2
+    }).format(amount);
+
+    const areaSelect = document.getElementById("area");
+    const areaEntries = Object.entries(areas).sort((a, b) => a[1].name.localeCompare(b[1].name, "nl"));
+    areaEntries.forEach(([key, area]) => {
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = `${area.name} · ${area.km} km`;
+      areaSelect.append(option);
+    });
+
+    function renderPhotos(offer) {
+      const area = areas[offer.areaKey];
+      const photos = [
+        {
+          label: "Verblijf",
+          src: offer.accommodationImage,
+          alt: offer.accommodationAlt,
+          page: offer.accommodationUrl,
+          source: offer.provider.split(" · ")[0]
+        },
+        {
+          label: "Skigebied",
+          src: area.image,
+          alt: area.alt,
+          page: area.url,
+          source: "Officieel gebied"
+        },
+        {
+          label: "Bus",
+          src: offer.busImage,
+          alt: offer.busPhotoAlt || (offer.busPhotoSource.includes("Interbus")
+            ? "Voorbeeldbeeld van een Interbus-touringcar"
+            : offer.busPhotoSource.includes("Sunweb")
+              ? "Sfeerbeeld van een Sunweb-wintersportbusreis"
+              : "Sfeerbeeld van een touringcar"),
+          page: offer.busPhotoPage || offer.busUrl,
+          source: offer.busPhotoSource
+        }
+      ];
+
+      return photos.map(photo => `
+        <figure class="photo">
+          <a href="${photo.page}" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
+            <img src="${photo.src}" alt="${photo.alt}" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>${photo.label}</span><a href="${photo.page}" target="_blank" rel="noreferrer" aria-label="Bron: ${photo.source}">${photo.source} ↗</a></figcaption>
+        </figure>
+      `).join("");
+    }
+
+    function renderOffer(offer, isLead = false) {
+      const area = areas[offer.areaKey];
+      const left = Math.max(0, 5000 - offer.total);
+      const budgetPercent = Math.min(100, offer.total / 5000 * 100);
+      const statusClass = offer.priceKind === "exact" ? "is-exact" : ["estimate", "tight", "lead"].includes(offer.priceKind) ? "is-estimate" : "";
+      const tight = offer.total > 4800;
+      const budgetMarkup = offer.priceKind === "lead"
+        ? `<div class="budget-line budget-line-unverified"><div class="budget-caption"><span>Budgetcheck</span><span>Niet bevestigd</span></div></div>`
+        : `<div class="budget-line">
+            <div class="budget-caption"><span>Budgetruimte</span><span>${money(left)}</span></div>
+            <div class="budget-track" role="img" aria-label="${Math.round(budgetPercent)} procent van het budget gebruikt">
+              <div class="budget-fill ${tight ? "is-tight" : ""}" style="width:${budgetPercent}%"></div>
+            </div>
+          </div>`;
+
+      return `
+          <article class="offer ${isLead ? "is-lead" : ""}" data-area="${offer.areaKey}" data-total="${offer.total}" data-km="${area.km}" data-lift="${offer.liftMeters ?? 99999}">
+            <div class="offer-main">
+              <header class="offer-heading">
+                <span class="rank" aria-label="Rang ${String(offer.currentRank).padStart(2, "0")}">${String(offer.currentRank).padStart(2, "0")}</span>
+                <div>
+                  <p class="operator">${offer.provider}</p>
+                  <h3>${offer.name}</h3>
+                  <p class="destination">${offer.village} · ${area.name}</p>
+                  <p class="property-note">${offer.property}</p>
+                </div>
+                <span class="pass-stamp">${offer.pass}</span>
+              </header>
+              <div class="quick-facts">
+                <span>${area.km} km piste</span>
+                <span>${offer.lift}</span>
+                <span>${offer.bus}</span>
+              </div>
+              <div class="gallery" aria-label="Foto's van verblijf, skigebied en bus">
+                ${renderPhotos(offer)}
+              </div>
+              <div class="detail-row">
+                <p class="room-note">${offer.availability}</p>
+                ${offer.priceKind === "exact" ? '<span class="availability">Live basis gecheckt</span>' : ""}
+              </div>
+            </div>
+            <aside class="offer-price" aria-label="Prijs en budget">
+              <span class="price-state ${statusClass}">${offer.priceState}</span>
+              <div>
+                <p class="price-label">${offer.priceLabel}</p>
+                <p class="total-price">${offer.priceDisplay || money(offer.total)}</p>
+                <p class="per-family">${offer.perFamilyLabel || "2 volwassenen + 2 kinderen · 8-daagse pas"}</p>
+              </div>
+              ${budgetMarkup}
+              <p class="price-calc">${offer.priceBasis}</p>
+              <div class="offer-actions">
+                <a class="provider-link" href="${liveOfferUrl(offer)}" target="_blank" rel="noreferrer">Bekijk aanbod ↗</a>
+              </div>
+            </aside>
+            <details class="offer-details">
+              <summary>Prijs & voorwaarden</summary>
+              <div class="detail-content">
+                <p><strong>Prijsopbouw:</strong> ${offer.detailPrice}</p>
+                <p><strong>Inbegrepen:</strong> ${offer.included.join("; ")}.</p>
+                <p><strong>Niet inbegrepen / controleren:</strong> ${offer.notIncluded.join("; ")}.</p>
+                <p>${offer.extras}</p>
+                <p>${offer.sourceNote}</p>
+                <div class="sources">
+                  <a href="${offer.accommodationUrl}" target="_blank" rel="noreferrer">Verblijf en live aanbod ↗</a>
+                  <a href="${area.url}" target="_blank" rel="noreferrer">${area.name} · officiële gebiedspagina ↗</a>
+                  <a href="${offer.busUrl}" target="_blank" rel="noreferrer">Businformatie ↗</a>
+                </div>
+              </div>
+            </details>
+          </article>
+      `;
+    }
+
+    function render() {
+      const searchText = document.getElementById("search").value.trim().toLocaleLowerCase("nl");
+      const area = areaSelect.value;
+      const onlyBudget = document.getElementById("within-budget").checked;
+      const sortBy = document.getElementById("sort").value;
+      let filtered = offers.filter(offer => {
+        const areaInfo = areas[offer.areaKey];
+        const searchable = `${offer.provider} ${offer.name} ${offer.village} ${areaInfo.name}`.toLocaleLowerCase("nl");
+        return (!searchText || searchable.includes(searchText))
+          && (area === "all" || offer.areaKey === area)
+          && (!onlyBudget || offer.total <= 5000);
+      });
+
+      if (sortBy === "size") filtered.sort((a, b) => areas[b.areaKey].km - areas[a.areaKey].km || a.total - b.total);
+      if (sortBy === "lift") filtered.sort((a, b) => (a.liftMeters ?? 99999) - (b.liftMeters ?? 99999) || a.total - b.total);
+      if (sortBy === "price") {
+        filtered.sort((a, b) => Number(a.priceKind === "lead") - Number(b.priceKind === "lead") || a.total - b.total);
+      }
+
+      const list = document.getElementById("offer-list");
+      filtered.forEach((offer, index) => { offer.currentRank = index + 1; });
+      const featured = document.getElementById("featured-offer");
+      featured.innerHTML = filtered.length
+        ? `<div class="featured-label"><span>Bovenaan volgens huidige sortering</span><span>Rang 01 / ${String(filtered.length).padStart(2, "0")}</span></div>${renderOffer(filtered[0], true)}`
+        : "";
+      list.innerHTML = filtered.slice(1).map(offer => `<li>${renderOffer(offer)}</li>`).join("");
+      document.getElementById("result-count").textContent = filtered.length;
+      document.getElementById("no-results").hidden = filtered.length > 0;
+      document.querySelector(".results-meta span:last-child").textContent =
+        sortBy === "size" ? "Gesorteerd op pistekilometers" :
+        sortBy === "lift" ? "Gesorteerd op bevestigde liftafstand" :
+        "Gezinsbedragen; onvolledige Saalbach-lead staat onderaan";
+
+      list.querySelectorAll(".photo img").forEach(image => {
+        image.addEventListener("error", () => image.closest(".photo").classList.add("is-missing"), { once: true });
+      });
+    }
+
+    document.getElementById("search").addEventListener("input", render);
+    areaSelect.addEventListener("change", render);
+    document.getElementById("sort").addEventListener("change", render);
+    document.getElementById("within-budget").addEventListener("change", render);
+
+    render();
+  </script>
+</body>
+</html>
